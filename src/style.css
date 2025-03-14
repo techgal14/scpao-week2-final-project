@@ -9,22 +9,22 @@ body {
 }
 
 h1 {
-  display: flex;
   position: relative;
-  bottom: 20px;
-  left: 10px;
+  margin-left: 10px;
+  bottom: 45px;
   font-size: 35px;
 }
 
 select {
   background-color: #f7e7e3;
+  border-color: purple;
   border-radius: 4px;
   display: flex;
   font-size: 16px;
   max-width: 40%;
   padding: 10px 140px 10px 10px;
   position: relative;
-  bottom: 105px;
+  bottom: 130px;
   left: 525px;
 }
 
@@ -33,17 +33,19 @@ footer {
   font-size: 16px;
   padding-top: 20px;
   text-align: center;
+  position: relative;
+  top: 30px;
 }
 
 .container {
   background-color: #f2ece1;
   border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.09);
   margin: 0 auto;
+  max-height: 535px;
   max-width: 800px;
   padding: 30px;
   position: relative;
-  top: 90px;
+  top: 40px;
 }
 
 .rock-salt-regular {
@@ -52,9 +54,82 @@ footer {
   font-style: normal;
 }
 
-.city {
-  display: flex;
+.big-shoulders {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.world {
+  font-size: 40px;
+  padding-right: 8px;
   position: relative;
+  left: 8px;
+  top: 6px;
+}
+
+.city-container-one {
+  background-color: #e3e7fc;
+  border: 1px solid purple;
+  border-radius: 4px;
+  max-width: 40%;
+  padding: 20px 0;
+  position: relative;
+  left: 40px;
+  bottom: 70px;
+  text-align: center;
+}
+
+.city-container-two {
+  background-color: #e3e7fc;
+  border: 1px solid purple;
+  border-radius: 4px;
+  max-width: 40%;
+  padding: 20px 0;
+  position: relative;
+  left: 40px;
+  bottom: 17px;
+  text-align: center;
+}
+
+.city-container-three {
+  background-color: #e3e7fc;
+  border: 1px solid purple;
+  border-radius: 4px;
+  max-width: 40%;
+  padding: 20px 0;
+  position: relative;
+  right: -440px;
+  bottom: 373px;
+  text-align: center;
+}
+
+.city-container-four {
+  background-color: #e3e7fc;
+  border: 1px solid purple;
+  border-radius: 4px;
+  max-width: 40%;
+  padding: 20px 0;
+  position: relative;
+  right: -440px;
+  bottom: 320px;
+  text-align: center;
+}
+
+.location {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.time {
+  color: #630b63;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .coder {

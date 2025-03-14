@@ -10,13 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rock+Salt&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>🌏 World Clock ⏱️</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="rock-salt-regular">🌍 World Clock</h1>
+      <h1 class="rock-salt-regular">
+        <span class="world">🌍</span> World Clock
+      </h1>
       <select name="" id="">
         <option value="">Select a city</option>
         <option value="">Dublin</option>
@@ -24,28 +32,28 @@
         <option value="">Moscow</option>
         <option value="">Beijing</option>
       </select>
-      <div class="city">
-        <div class="location">Vancouver</div>
+      <div class="city-container-one big-shoulders">
+        <div class="location">Vancouver 🇨🇦</div>
         <div class="date">March 13, 2025</div>
         <div class="time">2:01:48 <small>AM</small></div>
       </div>
-      <div class="city">
-        <div class="location">Barcelona</div>
+      <div class="city-container-two big-shoulders">
+        <div class="location">Barcelona 🇪🇸</div>
         <div class="date">March 13, 2025</div>
         <div class="time">2:02:48 <small>AM</small></div>
       </div>
-      <div class="city">
-        <div class="location">London</div>
+      <div class="city-container-three big-shoulders">
+        <div class="location">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
         <div class="date">March 13, 2025</div>
         <div class="time">2:03:48 <small>AM</small></div>
       </div>
-      <div class="city">
-        <div class="location">Dubai</div>
+      <div class="city-container-four big-shoulders">
+        <div class="location">Dubai 🇦🇪</div>
         <div class="date">March 13, 2025</div>
         <div class="time">2:04:48 <small>AM</small></div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       This project was coded by
       <a href="https://github.com/" target="_blank" class="coder"
         >Michelle Leclair 🦄</a
