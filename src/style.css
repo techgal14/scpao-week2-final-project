@@ -17,7 +17,7 @@ h1 {
 
 select {
   background-color: #f7e7e3;
-  border-color: purple;
+  border-color: #630b63;
   border-radius: 4px;
   display: flex;
   font-size: 16px;
@@ -29,7 +29,7 @@ select {
 }
 
 footer {
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   padding-top: 20px;
   text-align: center;
@@ -70,7 +70,7 @@ footer {
 
 .city-container-one {
   background-color: #e3e7fc;
-  border: 1px solid purple;
+  border: 1px solid #630b63;
   border-radius: 4px;
   max-width: 40%;
   padding: 20px 0;
@@ -82,7 +82,7 @@ footer {
 
 .city-container-two {
   background-color: #e3e7fc;
-  border: 1px solid purple;
+  border: 1px solid #630b63;
   border-radius: 4px;
   max-width: 40%;
   padding: 20px 0;
@@ -94,25 +94,25 @@ footer {
 
 .city-container-three {
   background-color: #e3e7fc;
-  border: 1px solid purple;
+  border: 1px solid #630b63;
   border-radius: 4px;
   max-width: 40%;
   padding: 20px 0;
   position: relative;
   right: -440px;
-  bottom: 373px;
+  bottom: 392px;
   text-align: center;
 }
 
 .city-container-four {
   background-color: #e3e7fc;
-  border: 1px solid purple;
+  border: 1px solid #630b63;
   border-radius: 4px;
   max-width: 40%;
   padding: 20px 0;
   position: relative;
   right: -440px;
-  bottom: 320px;
+  bottom: 339px;
   text-align: center;
 }
 
@@ -124,12 +124,20 @@ footer {
 .date {
   font-size: 14px;
   font-weight: 400;
+  opacity: 0.6;
 }
 
 .time {
   color: #630b63;
   font-size: 42px;
   font-weight: 700;
+  padding: 5px;
+}
+
+.time small {
+  font-size: 20px;
+  line-height: 36px;
+  vertical-align: middle;
 }
 
 .coder {
