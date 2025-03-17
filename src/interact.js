@@ -2,16 +2,16 @@ function updateTime() {
   // Vancouver
   let vancouverElement = document.querySelector("#vancouver");
   if (vancouverElement) {
-  let vancouverDateElement = vancouverElement.querySelector(".date");
-  let vancouverTimeElement = vancouverElement.querySelector(".time");
-  let vancouverTime = moment().tz("America/Vancouver");
+    let vancouverDateElement = vancouverElement.querySelector(".date");
+    let vancouverTimeElement = vancouverElement.querySelector(".time");
+    let vancouverTime = moment().tz("America/Vancouver");
 
-  vancouverDateElement.innerHTML = moment().format("MMMM D, YYYY");
-  vancouverTimeElement.innerHTML = vancouverTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+    vancouverDateElement.innerHTML = moment().format("MMMM D, YYYY");
+    vancouverTimeElement.innerHTML = vancouverTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
-  
+
   // London
   let londonElement = document.querySelector("#london");
   let londonDateElement = londonElement.querySelector(".date");
@@ -46,6 +46,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -57,11 +60,15 @@ function updateCity(event) {
         <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
     "A"
   )}</small></div>
-      </div>
+      </div>  
   `;
 }
+
 updateTime();
 setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#selected-city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+let cityContainer = citiesElement.querySelector(".pink");
+cityContainer.style.backgroundColor = "#f7e7e3";
