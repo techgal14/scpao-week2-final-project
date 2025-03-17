@@ -140,6 +140,10 @@ footer {
   vertical-align: middle;
 }
 
+.pink {
+  background-color: #f7e7e3;
+}
+
 .coder {
   color: blueviolet;
   font-family: monospace;

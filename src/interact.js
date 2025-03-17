@@ -61,8 +61,11 @@ function updateCity(event) {
           "h:mm:ss"
         )} <small> ${cityTime.format("A")}</small></div>
   <a href="https://scpao-week2-final-project.netlify.app/">Reset</a>
-      </div>    
+      </div>   
   `;
+  setTimeout(() => {
+    updateCity(event);
+  }, 1000);
 }
 
 updateTime();
@@ -70,6 +73,3 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#selected-city");
 citiesSelectElement.addEventListener("change", updateCity);
-
-let cityContainer = citiesElement.querySelector(".pink");
-cityContainer.style.backgroundColor = "#f7e7e3";
