@@ -57,10 +57,11 @@ function updateCity(event) {
   <div class="city-container-one big-shoulders pink">
         <div class="location">${cityName}</div>
         <div class="date">${cityTime.format("MMMM D, YYYY")}</div>
-        <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
-    "A"
-  )}</small></div>
-      </div>  
+        <div class="time">${cityTime.format(
+          "h:mm:ss"
+        )} <small> ${cityTime.format("A")}</small></div>
+  <a href="https://scpao-week2-final-project.netlify.app/">Reset</a>
+      </div>    
   `;
 }
 
